@@ -14,11 +14,11 @@ PyTorch 1.10.1
 - `--average-period` model average period of CSER and LIEC-SGD. In the CIFAR experiment, this parameter is set to 8 in CSER and 32 and 100 in LIEC-SGD.
 
 ## Example of experiments
-## If train ResNet18 on CIFAR-10 dataset with P-SGD
+- If train ResNet18 on CIFAR-10 dataset with P-SGD：
 python main.py --arch resnet18 --dataset cifar10 --method psgd --batch-size 128 --gpus 8 --epochs 120 --lr 0.1
-## If train ResNet18 on CIFAR-10 dataset with LIEC-SGD(32) using SignSGD
+- If train ResNet18 on CIFAR-10 dataset with LIEC-SGD(32) using SignSGD：
 python main.py --arch resnet18 --dataset cifar10 --method liec --batch-size 128 --gpus 8 --epochs 120 --lr 0.1 --bucket-size 52428800 --average-period 32
-## If train ResNet34 on CIFAR-100 dataset with LIEC-SGD(100) using Blockwise-SignSGD
+- If train ResNet34 on CIFAR-100 dataset with LIEC-SGD(100) using Blockwise-SignSGD：
 python main.py --arch resnet34 --dataset cifar100 --method liec --batch-size 128 --gpus 8 --epochs 120 --lr 0.1 --bucket-size 5242880 --average-period 100
 
 ## Tiny-Imagenet experiments

@@ -15,11 +15,11 @@ PyTorch 1.10.1
 
 ## Example of experiments
 - If train ResNet18 on CIFAR-10 dataset with P-SGD：
-python main.py --arch resnet18 --dataset cifar10 --method psgd --batch-size 128 --gpus 8 --epochs 120 --lr 0.1
+·python main.py --arch resnet18 --dataset cifar10 --method psgd --batch-size 128 --gpus 8 --epochs 120 --lr 0.1·
 - If train ResNet18 on CIFAR-10 dataset with LIEC-SGD(32) using SignSGD：
-python main.py --arch resnet18 --dataset cifar10 --method liec --batch-size 128 --gpus 8 --epochs 120 --lr 0.1 --bucket-size 52428800 --average-period 32
+·python main.py --arch resnet18 --dataset cifar10 --method liec --batch-size 128 --gpus 8 --epochs 120 --lr 0.1 --bucket-size 52428800 --average-period 32·
 - If train ResNet34 on CIFAR-100 dataset with LIEC-SGD(100) using Blockwise-SignSGD：
-python main.py --arch resnet34 --dataset cifar100 --method liec --batch-size 128 --gpus 8 --epochs 120 --lr 0.1 --bucket-size 5242880 --average-period 100
+·python main.py --arch resnet34 --dataset cifar100 --method liec --batch-size 128 --gpus 8 --epochs 120 --lr 0.1 --bucket-size 5242880 --average-period 100·
 
 ## Tiny-Imagenet experiments
 The experiments on tiny-imagenet dataset is also run with the same code and parameters. The only change is that we adopt the cosine lr scheduler.

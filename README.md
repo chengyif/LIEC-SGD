@@ -9,8 +9,8 @@ PyTorch 1.10.1
 - `--gpus` number of gpus used.
 - `--lr` initial learning rate
 - `--bucket-size` denote the size of the parameters in one block when adopting Blockwise-SignSGD, used to control the number of blocks. 
-                  In the CIFAR-10 experiment, we set this parameter to 5242880(5*1024*1024) for Blockwise-SignSGD (10 blocks), 52428800 for SignSGD (1 block).
-                  In the CIFAR-100 experiment, we set this parameter to 5242880(5*1024*1024) for Blockwise-SignSGD (18 blocks), 524288000 for SignSGD (1 block).   
+                  In the CIFAR-10 experiment, we set this parameter to 5242880(5 * 1024 * 1024) for Blockwise-SignSGD (10 blocks), 52428800(50 * 1024 * 1024) for SignSGD (1 block).
+                  In the CIFAR-100 experiment, we set this parameter to 5242880 for Blockwise-SignSGD (18 blocks), 524288000 for SignSGD (1 block).   
 - `--average-period` model average period of CSER and LIEC-SGD. In the CIFAR experiment, this parameter is set to 8 in CSER and 32 and 100 in LIEC-SGD.
 
 ## Example of experiments
